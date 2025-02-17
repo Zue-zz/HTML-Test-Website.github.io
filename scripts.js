@@ -20,25 +20,3 @@ resetBtn.addEventListener("click", () => {
     scoreDisplay.textContent = score;
     localStorage.setItem("clickerScore", score);
 });
-
-// Buy Auto Clicker
-buyAutoClickerBtn.addEventListener("click", () => {
-    if (score >= autoClickerCost) {
-        score -= autoClickerCost;
-        autoClickers++;
-        autoClickerCost = Math.ceil(autoClickerCost * 1.5);
-        updateScore();
-        updateAutoClicker();
-        showAutoClickNotification("Auto-Clicker Purchased!");
-    }else{
-        showAutoClickNotification("Not enough points to purchase Auto-Clicker :(");
-    }
-});
-
-//Auto-Clicker Function (Runs Every Second)
-setInterval(() => {
-    if (autoClickers > 0) {
-        score += autoClickers;
-        updateScore();
-    }
-}, 1000);

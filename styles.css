@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: lightblue;
+    background-color: rgb(0, 0, 0);
     padding: 0;
 }
 
@@ -10,7 +10,23 @@ body {
 }
 
 h1 {
-    color: #d400ff;
+    color: #00d0ff;
+}
+
+h2{
+    color: white;
+}
+
+h3{
+    color: white;
+}
+
+h4{
+    color: white;
+}
+
+p{
+    color: white;
 }
 
 #clickBtn {
